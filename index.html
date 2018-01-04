@@ -1,331 +1,175 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+<meta charset="utf-8">
 <head>
-	<meta charset="UFT-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> YesWebster Portfolio </title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
+	<title>Portfolio</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles.css"/> 
+	<link rel="stylesheet" type="text/css" href="styles.scss"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<script src="background.min.js"></script> 
+	<script src="trianglify.min.js"></script>
+	<script src="d3.min.js"></script>
+	<script src="animations.js"></script>
+	<script src="transition.min.js"></script>
+	<script src="spriteAnimation.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/plugins/CSSRulePlugin.min.js"></script>
 
-        ga('create', 'UA-61514358-2', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
- 
-
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 </head>
 
-  <!--scrolling menu-->
+<body>
 
-
-<body class="container-liquid">
-	  <header class="floating-menu">
-    	<div class ="banner">
-        	<div class="menu">
-            	<nav class="showing">
-                	<ul>
-                      <a href="#home"> <li>HOME</li></a>
-                      <a href="#portfolio"> <li>PORTFOLIO</li></a>
-                        <a href="index.html"><li><img class="logo" src="images/logo.png" alt="logo"></li></a>
-                      <a href="#resume"><li>RESUME</li></a>
-                      <a href="#contact"><li>CONTACT</li></a>
-                  </ul>
-                      <div class="handle"><img src="images/menu.png" alt="menu"/></div> 
-            	</nav>
-        	</div>      
-    	</div> 
-	</header>
-
- <!--THE VIDEO-->
-   
-    <video id="bgvideo" class="row" autoplay >
- <source src="media/space.mp4" type="video/mp4"/>
-    </video>
-
-<div id="home">
-   <div class="container-liquid" id="move">
-      <div class="row">  
-            <div class="box" style="cursor:default">
-            <svg width="500" height="200" id="fullscreen">
-              <line class="top" x1="0" y1="0" x2="1500" y2="0"/>
-              <line class="left" x1="0" y1="200" x2="0" y2="-400"/>
-              <line class="bottom" x1="500" y1="200" x2="-1000" y2="200"/>
-              <line class="right" x1="500" y1="0" x2="500" y2="600"/>
-            </svg>
-            <h3>YESWEBSTER</h3>
-          </div>
-          <div class="box-mobile" style="cursor:default" >
-            <svg width="300" height="100" id="mobilescreen">
-              <line class="top" x1="0" y1="0" x2="900" y2="0"/>
-              <line class="left" x1="0" y1="100" x2="0" y2="-200"/>
-              <line class="bottom" x1="300" y1="100" x2="-600" y2="100"/>
-              <line class="right" x1="300" y1="0" x2="300" y2="300"/>
-            </svg>
-            <h3>YesWebster</h3>
-          </div>
-
-      </div>
-    </div>
+	<div class="loader">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <div class="bar4"></div>
+  <div class="bar5"></div>
+  <div class="bar6"></div>
 </div>
 
-
-	<div id="resume" class="filler2">
-</div>
-    
-
-    <div class="container-liquid about-menu" id="resume-para">
-      <div class="row">
-    	  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 moon-bg" >
-          <div class=" description">
-                <h1 id="title">
-                   <span class="line1">the thing about</span>
-                    <span class="line2"> Elizabeth Letourneau</span>
-                </h1>
-                <p> I am an independent and creative individual expanding my skills in the multimedia industry. I love web design and creative projects that help other individuals market and share their passions and ideas</p><br><br><br>
-                <h1 id="title">
-                   <span class="line1">the idea behind</span>
-                    <span class="line2"> YesWebster</span>
-                </h1>
-                <p>YesWebster Designs comes from the darkest corners of my creative mind. It's an imagination outlet and business platform  that attempts to encapsulate one direction of creativity</p>
-          </div>
-        </div> 
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 buzz-box"> 
-            <div class="buzz"></div>
-          </div>    		  
-      </div>
-    </div>
-
-    <div class="wood-bg">
-      <div class="quote"> 
-        <h1> We do not need magic to transform the world. We carry all the power we need in ourselves already </h1>
-        <h1>- JK Rowling</h1> 
-      </div>
-    </div>
-  
-  <div id="portfolio"></div>
- 
-      <div class="container-liquid">
-        <div class="row">
-          <div class="col-sm-4">
-            <a href="#img1" class='image-overlay'><img src="images/project-one-color.png" class="img-responsive inline-block"  alt="project one">
-                    <div class="overlay">
-                        <h1 id="title">
-                          <span class="line1">Hermione Stranger</span>
-                          <span class="line2"> A Flash Game</span>
-                        </h1>
-                        <p> The beginning works of a made-for-fun platform game using flash, illustrator and action script</p>
-                  </div>
-              </a></li>
-          </div>
-          <div class="col-sm-4">    
-              <a href="#img2" class='image-overlay'><img src="images/project-two-color.png" class="img-responsive inline-block"  alt="project two">
-                    <div class="overlay">
-                        <h1 id="title">
-                          <span class="line1">Face-2-Face</span>
-                          <span class="line2">Website Mockup</span>
-                        </h1>
-                        <p>As part of the graduate program we worked directly with a non-profit organization rebranding their website</p>
-                    </div>
-              </a>
-          </div>
-          <div class="col-sm-4">  
-            <a href="#img3" class='image-overlay'><img src="images/project-three-color.png" class="img-responsive inline-block"  alt="project three">
-                    <div class="overlay">
-                        <h1 id="title">
-                          <span class="line1">Tiny Robot Fistbump</span>
-                          <span class="line2">Flash Video</span>
-                        </h1>
-                        <p> A short flash video I put together for a school project.</p>
-                    </div>
-              </a></li>
-          </div>           
-        </div>
-        <div class="row">
-          <div class="center">
-            <div class="col-sm-4">
-            <a href="#img4" class='image-overlay'><img src="images/project-four-color.jpg" class="img-responsive inline-block"  alt="project four">
-                      <div class="overlay">
-                          <h1 id="title">
-                            <span class="line1">MKDB Interior Design Website</span>
-                            <span class="line2">Design & Social Marketing</span>
-                          </h1>
-                          <p> designing a wordpress theme site and marketing it out</p>
-                      </div>
-                </a>
-            </div>    
-            <div class="col-sm-4">
-                  <a href="#img5" class='image-overlay'><img src="images/project-five-color.png" class="img-responsive inline-block"  alt="project five">
-                      <div class="overlay">
-                          <h1 id="title">
-                            <span class="line1">YesWebster Brand</span>
-                            <span class="line2"> Personal Branding</span>
-                          </h1>
-                          <p>YesWebster's 2015 Brand and business card model</p>
-                      </div>
-                </a>
-            </div>
-            <div class="col-sm-4">
-            <a href="#img6" class='image-overlay'><img src="images/project-six-color.png" class="img-responsive inline-block"  alt="project six">
-                    <div class="overlay">
-                        <h1 id="title">
-                          <span class="line1">Work Compilation</span>
-                          <span class="line2"> 2015 Demo Reel</span>
-                        </h1>
-                        <p>A collective of a few of the projects I worked on this year</p>
-                    </div>
-            </a>
-            </div>               
-        </div>
-      </div>
-  </div>
- 
-<div id="contact"></div>
-
-
-<!-- HIDDEN Lightbox -->
-
-<a href="#portfolio" class="lightbox" id="img1">
-  <div class="flash"><object data="media/hermionegranger.swf"></object></div>
-</a>
-
-<a href="#portfolio" class="lightbox" id="img2">
-  <div class="flash"><object data="media/clientproject.swf"></object></div>
-</a>
-
-<a href="#portfolio" class="lightbox" id="img3">
-  <video controls><source src="media/fistbump.mp4" type="video/mp4"></video>
-</a>
-
-<a href="#portfolio" class="lightbox" id="img4">
-  <img   src="images/mkdb-full.jpg" alt="website design"/>
-</a>
-
-<a href="#portfolio" class="lightbox" id="img5">
-   <img src="images/project-five-color.png" alt="personal branding yeswebster"/>
-</a>
-
-<a href="#portfolio" class="lightbox" id="img6">
-  <video controls><source src="media/demoreel.mp4" type="video/mp4"></video>
-</a>
- 
-<footer>
-  <div class="container-liquid">
-    <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 contact-row">
-                <h2> CONTACT INFO</h2>
-                <p> elizabethletourneau@gmail.com</p>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-lg-4 follow-row">
-                <h2 >Across the Web</h2>  
-                <a href="https://twitter.com/yaswebster"><img class="icon" src="images/twitter.png" alt="twitter"/></a> 
-                <a href="https://instagram.com/yeswebster/"><img class="icon" src="images/instagram.png" alt="instagram"/></a> 
-                <a href="https://ca.linkedin.com/in/elizabethletourneau"><img class="icon" src="images/linkedin.png" alt="linkedin"/></a>
-            </div>
-                
-            <div class="location-row col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <h2>LOCATION</h2>
-                <p> Ottawa, Ontario</p> 
-            </div>
-    </div>
-    <div class="row">
-            <div class= "col-xs-12 copyright">
-              <div id="copyright"></div>
-            </div>
+<main>
+  <div class="-content -index">
+    <div>
+      <h1>Loader Transition</h1>
+      <a href="#" class="btn js-trigger-transition">Begin Transition</a>
     </div>
   </div>
-</footer>
-
-<!--mobile navigation-->
-          <script> 
-            $('.handle').on('click', function(){
-                  $('nav ul').toggleClass('showing');
-                  return false;
-            });
-          </script>
-
-<!--copyright-->
-          <script> 
-            var today = new Date();
-            var year = today.getFullYear();
-            var el =document.getElementById('copyright');
-            el.innerHTML = '<p>Copyright &copy ' + year + ' Elizabeth Letourneau</p>';
-          </script>
+</main>
 
 
-<!--Opacity Feature for Yeswebster Box -->
-      <script> 
-        $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-            $('.box, .slogan').css({'opacity':(( 180-scroll )/400)+0.4});
-        });
-      </script>
+	<div class="container-fluid">
 
 
-<!--scrolling me -->
-      <script>
-        $(window).scroll(function() {    
-        var scrollmenu = $(window).scrollTop();
-
-          if (scrollmenu >= 480) {
-          $(".menu").addClass("scrolling");
-          } else {
-          $(".menu").removeClass("scrolling");
-          }
-          });
-      </script>
-
-<!--Opacity for Quote -->        
-
-        <script> 
-          $(window).scroll(function() {    
-          var scroll = $(window).scrollTop();
-              $('.quote').css({'opacity':(( 1595-scroll )/400)+0.4});
-          });
-        </script>
 
 
-<!-- parallax description and Buzz-->
 
-      <script> 
-      $(window).scroll(function(){
-        var aboutScroll = $(this).scrollTop();
-        $('.description').css({
-          'transform':'translate(0px, -'+ aboutScroll /20 +'%)'
-        });
-        $('.buzz-box').css({
-          'transform':'translate(0px, -'+ aboutScroll /90 +'%)'
-        });
-      });
-      </script>
+		<div class="row menu">
+			<div class="col">
+				<div class="menu-section">
+					<div class="menu-toggle">
+  						<div class="one"></div>
+   						<div class="two"></div>
+						<div class="three"></div>
+ 					</div>
+ 					 <nav>
+						<ul class=" nav justify-content-center hidden">
+						<li class="nav-item"><a class="first" href="#work">WORK</a></li>
+						<li class="nav-item page-toggle"><a href="#about">ABOUT</a></li>
+						<li class="nav-item"><a href="#contact">CONTACT</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>	
+		</div>
+			
+		<div class="page-section">
+			<div class="page hidden">
+				<div class ="row">
+					<div class="col-md-6 col-sm profile">
+						<div class="row">
+							<div class="col">
+							
+					<h2 class="first">/*aboutMe.css*/</h2>
+					<h2 class="first">#Skills .ComputerProgramming .WebDesign .WebDevelopment {</h2>
+					<h2 class="second">>Language: HTML, CSS, JavaScript, JQuery, Ruby, PHP, MySQL,</h2>
+					<h2> Java, C++;</h2>
+					<h2 class="first">Software: Photoshop, Illustrator, Premier-Pro, InDesign,</h2>
+					<h2 class="second">>AfterEffects, Flash, Acrobat-Pro;</h2>
+					<h2 class="third">}</h2>
 
-<!-- smooth scroll  -->
+					<h2 class="first">#Skills .Other {</h2>
+					<h2 class="second">Knowledge: videography, motion-graphic-design, photography</h2>
+					<h2 class="third" >-and-photoediting, marketing-analytics, PPC-campaigning, </h2>
+					<h2 class="forth">lead-generating-marketing, search-engine-optimization, </h2>
+					<h2 class="fifth">email-campaign-marketing, blogging, socialmedia-and-content</h2>
+					<h2 class="sixth">-marketing;</h2>
+					<h2 class="seventh">}</h2>
+					
+					<h2 class="first">#Education .University-of-Ottawa {</h2>
+					<h2 class="second">Degree: Honours-Bachelor-of-Arts-with-a-specialization
+					</br>-incommunications;
+					<h2 class="third">Year: 2009-2015;</h2>
+					<h2 class="forth">}</h2>
 
-      <script>
-          $(document).ready(function(){
-            $('a[href^="#"]').on('click',function (e) {
-            e.preventDefault();
+					<h2 class="first">#Education .Algonquin-College {</h2>
+					<h2 class="second">Certificate: graduate-degree-in-interactive-multimedia-management;
+					<h2 class="third">Year: 2015;</h2>
+					<h2 class="forth">}<span>|</span></h2>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="col-sm-6">
+						<img class="img-fluid" alt="Responsive image" src="images/shopify.png">
+							</div>
+							<div class="col-sm-6">
+						<img class="img-fluid" alt="Responsive image" src="images/carleton.png">
+							</div>
+						</div>	
 
-          var target = this.hash;
-          var $target = $(target);
 
-          $('html, body').stop().animate({
-              'scrollTop': $target.offset().top
-          }, 900, 'swing', function () {
-              window.location.hash = target;
-          });
-      });
-    });
-      </script>
-  </body>
-</html>
+					</div>
+					<div class="col-md-6 col-sm">
+				<img class="profile" src="images/profile.png" alt="Elizabeth Letourneau">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	
+			<div class="row">
+			<div class="col-sm-4 col-md title padding"> <p> ELIZABETH</p> </div>
+			<div class="col-sm-4 col-md align-self-center title padding">	
+				<div class="row justify-content-center">
+				<div class="col-sm-4">
+					<div id="spriteOne">
+						<img class="active" alt="space invader sprite white png" src="images/mediumsprite.png">
+						<img alt="space invader sprite white png" src="images/mediumsprite2.png">
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div id="spriteTwo">
+						<img class="active" alt="space invader sprite white png" src="images/mediumsprite.png">
+						<img alt="space invader sprite white png" src="images/mediumsprite2.png">
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div id="spriteThree">
+						<img class="active" alt="space invader sprite white png" src="images/mediumsprite.png">
+						<img alt="space invader sprite white png" src="images/mediumsprite2.png">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-md title padding"><p>LETOURNEAU</p></div>
+		</div>
+
+		<div class="row">
+		
+			<div class="col"></div>
+
+		</div>
+	</div>
+
+
+
+
+		<script src="background.min.js"></script> 
+	<script src="trianglify.min.js"></script>
+	<script src="d3.min.js"></script>
+	<script src="animations.js"></script>
+	<script src="spriteAnimation.js"></script>
+	<script src="transition.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/plugins/CSSRulePlugin.min.js'></script>
+
+
+</body>
+
+	</html>
