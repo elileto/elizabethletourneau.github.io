@@ -68,8 +68,12 @@ html,body{
 	background-color: #000000;
 }
 
-body{
+body {
+	background-image: url('images/background.jpg');
 	background-size:cover;
+	background-repeat: no-repeat;
+   	background-position: right top;
+   	background-attachment: fixed;
   
 }
 
@@ -95,6 +99,30 @@ h3 {
 h2 a{
   color: lime;
   text-decoration: none;
+}
+
+a:link {
+    color: #ffffff; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2DFFBE;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2DFFBE;;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #000000;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 span{
@@ -225,9 +253,10 @@ nav ul a:hover {
   width: 100%;
 }
 
-.image-selector .sec {
-  width: 25%;
+.image-selector .sec, .btn {
+  width: 100%; 
   float: left;
+  display: inline-block;
 }
 
 /* Menu Ends*/
@@ -263,7 +292,7 @@ nav ul a:hover {
               
   }
 
-  .title{
+.title{
   font-size: 2em;
   text-align: center;
   color: #ffffff;
@@ -302,9 +331,15 @@ div.hidden {
  
 }
 
-.pieces{
+.hidden{
+ display: none;
+}
+
+.work-menu{
+  width: 25%;
 
 }
+
 
 /* Media Queries */
 
