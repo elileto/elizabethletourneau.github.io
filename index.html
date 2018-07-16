@@ -1,85 +1,306 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
+
 <head>
 	<title>Portfolio</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="styles.css"/> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	    crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="icon"  type="image/png"  href="images/e-logo.png">
+	<link rel="icon" type="image/png" href="images/e-logo.png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	    crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	    crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	    crossorigin="anonymous"></script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-	<div class="container-fluid">
-		<div class="row menu">
-			<a class="home" href="#"><img  src="images/e-logo.png" alt="elizabeth letourneau logo"/></a>
-			<div class="col">
-				<div class="menu-section">
-					<div class="menu-toggle">
-  						<div class="one"></div>
-   						<div class="two"></div>
-						<div class="three"></div>
- 					</div>
- 					 <nav>
-						<ul class=" nav justify-content-center hidden">
-						<li class="nav-item show-one"><a class="first" href="work.html">WORK</a></li>
-						<li class="nav-item page-toggle"><a href="about.html">ABOUT</a></li>							</ul>
-					</nav>
-				</div>
-			</div>	
-		</div>
-			
-			<div class="row justify-content-center">
-				<div class="row">
-					<div class="align-self-center title padding">
-						<div id="spriteOne">
-							<img class="active" alt="space invader sprite white png" src="images/mediumsprite.png">
-							<img alt="space invader sprite white png" src="images/mediumsprite2.png">
-						</div>
-					</div>
-					<div class= "align-self-center title padding">
-
-						<div id="spriteTwo">
-							<img class="active" alt="space invader sprite white png" src="images/mediumsprite.png">
-							<img alt="space invader sprite white png" src="images/mediumsprite2.png">
-						</div>
-					</div>
-					<div class="align-self-center title padding">
-
-						<div id="spriteThree">
-							<img class="active" alt="space invader sprite white png" src="images/mediumsprite.png">
-							<img alt="space invader sprite white png" src="images/mediumsprite2.png">
-						</div>
+	<div class="container-fluid pl-0 pr-0">
+		<div class="bgimg-1">
+			<div class="row justify-content-center ml-0 mr-0">
+				<div class="col center">
+					<div class="col-sm title">
+						<p>/*ELIZABETH LETOURNEAU*/</p>
 					</div>
 				</div>
 			</div>
-		
-		<div class="row justify-content-center">
-			<div class="col center">
-				<div class="col-sm title"><p>/*ELIZABETH LETOURNEAU*/</p></div>
+		</div>
+
+
+		<!--MY WORK -->
+		<div class="bgimg-2">
+			<div class="row justify-content-center ml-0 mr-0">
+				<div class="image-selector">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<img src="images/yeswebster.png" class="main">
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+
+							<div class="tab-content hidden1">
+								<div class="tab-pane fade active show" id="one">
+									<h3>Yes Webster Portfolio Design</h3>
+									<h2>YesWebster.com was created in 2015 as a project to showcase portfolio pieces done over the year. The site was written
+										in HTML5 and CSS3 with with Javascript and Jquery scripts for the animated features. It was later redone to make
+										it a dynamic site in php as a wordpress template and included.</h2>
+								</div>
+								<div class="tab-pane fade" id="two">
+									<h3>MKDB Company Website</h3>
+									<h2>I was hired by Moneca Kaiser Design Build, an interior design company, as a Marketing Coordinator, and a Web Developer.
+										Throughout my time there, I managed their website, social media sites and all online and print advertising. I was
+										able to run a few marketing campaigns and created some video content for them. Their website is still up to date
+										at
+										<a href="https://www.mkdb.ca">mkdb.ca"</a>. </h2>
+								</div>
+								<div class="tab-pane fade" id="three">
+									<h3>Sweater Factory: Shopify Store</h3>
+									<h2>
+										<a href="https://sweaterfactory.myshopify.com">Sweater Factory</a> was my first Shopify store design and concept. It was mostly created to learn more about customized
+										theme design. </h2>
+								</div>
+								<div class="tab-pane fade" id="four">
+									<h3>Andrgyn: Shopify Store</h3>
+									<h2>
+										<a href="https://andrgyn.myshopify.com">Andrgyn</a> is my latest Shopify Store I am working on that I plan to launch in the coming summer of 2018. I am
+										in the stages of product design and once the product mockups are complete I'll be releasing product images and
+										further customizing the theme of the storefront to include more custom features such as a product carosel. I'm
+										also in the process of creating some custom apps for my Shopify store such as a subscription box service. While
+										these services are available in Shopify's app store to further my development skills and to save on costs these
+										apps will help me build my skills. </h2>
+								</div>
+							</div>
+							<div class="tab-content hidden hidden2">
+								<div class="tab-pane fade active show" id="five">
+									<h3>Zombie Simulator</h3>
+									<h2>Zombie simulator was created in processing to simulate the infection rate of a zombie outbreak basing an outbreak
+										on both healthy and injured people on probability. It required figuring out collision detection and wandering code
+										for our creatures. The project code can be viewed on my github account.
+										<div class="col-sm title">
+											<a href="https://github.com/elizabethletourneau/elizabethletourneau.github.io/tree/master/Projects/Zombie%20Simulator" target="_blank">
+												<img class="contact-icon" src="images/github.png"></img>
+											</a>
+										</div>
+									</h2>
+
+								</div>
+								<div class="tab-pane fade" id="six">
+									<h3>Information Diagrams </h3>
+									<h2>I have a keen interest in data visuaization and representing data into visuals. It's important to be able visualize
+										data and to communicate information clearly and efficiently via statistical graphics, plots and information graphics.
+										I have worked on a few projects in processing and java represent different types of data. </h2>
+								</div>
+								<div class="tab-pane fade" id="seven">
+									<h3>Randomized Slot Machine</h3>
+									<h2>This project involved creating a randomized color slot machine while learning about the importance of framecounts
+										using modulos, and arrays to store colors and the speed of it changing. This project is available to be seen on
+										my github account.</h2>
+									<div class="col-sm title">
+										<a href="https://github.com/elizabethletourneau/elizabethletourneau.github.io/tree/master/Projects/Slot%20Machine" target="_blank">
+											<img class="contact-icon" src="images/github.png"></img>
+										</a>
+									</div>
+
+								</div>
+								<div class="tab-pane fade" id="eight">
+									<h3>Space Invaders: Model View Controller</h3>
+									<h2>This demo version of a Model View Controller is the beggining works of Space Invaders. It was a project done to
+										practice the implimentation of a Model View Controller in java. This project is still a work in progress but the
+										current version can be view on ym github account.</h2>
+									<div class="col-sm title">
+										<a href="https://github.com/elizabethletourneau/elizabethletourneau.github.io/tree/master/Projects/Model%20View%20Controller"
+										    target="_blank">
+											<img class="contact-icon" src="images/github.png"></img>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="tab-content hidden hidden3">
+								<div class="tab-pane fade active show" id="nine">
+									<h3>Breakout!</h3>
+									<h2>Breakout! (or Brick Breaker) is a game developped in Processing.</h2>
+								</div>
+								<div class="tab-pane" id="ten">
+									<h3>Hermione Stranger</h3>
+									<h2>Hermione Stranger was Flash and Action Script game. It was created to learn the basic tools and language of action
+										script. It was created in 2015 as a school project final. while it does have the basic functionality it never was
+										fully developped to include the full levelling it was designed to be but still represents the first tools I used
+										to learn the basics of game design. </h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="home-tab" data-toggle="tab" href="#webdesign" role="tab" aria-controls="home" aria-selected="true">Web Design</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="profile-tab" data-toggle="tab" href="#programming" role="tab" aria-controls="profile" aria-selected="false">Programming</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="contact-tab" data-toggle="tab" href="#games" role="tab" aria-controls="contact" aria-selected="false">Games</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+
+						<div class="tab-content" id="myTabContent">
+
+							<div class="tab-pane fade show active tabs" id="webdesign" role="tabpanel" aria-labelledby="home-tab">
+								<ul class="nav nav-pills nav-justified">
+									<li class="active work-menu">
+										<a href="#one" class="show-one" data-toggle="tab">
+											<img src="images/yeswebster.png" class="sec">
+										</a>
+									</li>
+									<li class="work-menu">
+										<a href="#two" class="show-one" data-toggle="tab">
+											<img src="images/mkdb.png" class="sec">
+										</a>
+									</li>
+									<li class="work-menu">
+										<a href="#three" class="show-one" data-toggle="tab">
+											<img src="images/sweaterfactory.png" class="sec">
+										</a>
+									</li>
+									<li class="work-menu">
+										<a href="#four" class="show-one" data-toggle="tab">
+											<img src="images/andrgyn.png" class="sec">
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="tab-pane fade" id="programming" role="tabpanel" aria-labelledby="profile-tab">
+								<ul class="nav nav-pills nav-justified">
+
+									<li class="work-menu">
+										<a href="#five" class="show-two" data-toggle="tab">
+											<img src="images/zombies-program.gif" class="sec">
+										</a>
+									</li>
+									<li class="work-menu">
+										<a href="#six" class="show-two" data-toggle="tab">
+											<img src="images/diagrams.png" class="sec">
+										</a>
+									</li>
+									<li class="work-menu">
+										<a href="#seven" class="show-two" data-toggle="tab">
+											<img src="images/slots-1.gif" class="sec">
+										</a>
+									</li>
+									<li class="work-menu">
+										<a href="#eight" class="show-two" data-toggle="tab">
+											<img src="images/space-invader.gif" class="sec">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-pane fade" id="games" role="tabpanel" aria-labelledby="contact-tab">
+								<ul class="nav nav-pills nav-justified">
+									<li class="work-menu">
+										<a href="#nine" class="show-three" data-toggle="tab">
+											<img src="images/breakout.gif" class="sec">
+										</a>
+									</li>
+									<li class="work-menu">
+										<a href="#ten" class="show-three" data-toggle="tab">
+											<img src="images/herminone.gif" class="sec">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
 			</div>
 		</div>
-		
-		<div class="row justify-content-center">
-			<div class="col center">
-				<div class="col-sm title">
-					<a href="https://www.linkedin.com/in/elizabethletourneau/"><img class="contact-icon" src="images/linkedin.png"></img></a>
-					<a href="mailto:elizabeth.letourneau@shopify.com"><img class="contact-icon linkedin" src="images/mail.svg"></img></a>
+
+		<!-- PROFILE -->
+		<div class="bgimg-3">
+			<div class="row ml-0 mr-0">
+				<div class="col-md-6 col-sm-12 profile">
+					<div class="row ml-0 mr-0">
+						<div class="col">
+
+							<h3>/*aboutMe.css*/</h3>
+							<h2>#Skills .ComputerProgramming .WebDesign .WebDevelopment {</h2>
+							<h2> Language: HTML, CSS, JavaScript, JQuery, Ruby, PHP, MySQL, Java, C++;</h2>
+							<h2>Software: Photoshop, Illustrator, Premier-Pro, InDesign, AfterEffects, Flash, Acrobat-Pro;</h2>
+							<h2>}</h2>
+
+							<h2>#Skills .Other {</h2>
+							<h2>Knowledge: videography, motion-graphic-design, photography-and-photoediting, marketing-analytics, PPC-campaigning,lead-generating-marketing,
+								search-engine-optimization, email-campaign-marketing, blogging, socialmedia-and-content-marketing;</h2>
+							<h2>}</h2>
+
+							<h2>#Education .Carleton-University {</h2>
+							<h2>Degree: Bachelor of Computer Science Honours;</h2>
+							<h2>year: 2017-Present;</h2>
+							<h2>}</h2>
+
+
+							<h2>#Education .University-of-Ottawa {</h2>
+							<h2>Degree: Honours-Bachelor-of-Arts-with-a-specialization-in-communications;</h2>
+							<h2>year: 2009-2015;</h2>
+							<h2>}</h2>
+
+							<h2>#Education .Algonquin-College {</h2>
+							<h2>Certificate: graduate-degree-in-interactive-multimedia-management;
+								<h2>Year: 2015;</h2>
+								<h2>}
+									<span>|</span>
+								</h2>
+						</div>
+					</div>
+					<div class="row spacing ml-0 mr-0">
+						<div class="col-sm-6">
+							<img class="img-fluid" alt="Responsive image" src="images/shopify.png">
+						</div>
+						<div class="col-sm-6">
+							<img class="img-fluid" alt="Responsive image" src="images/carleton.png">
+						</div>
+					</div>
 				</div>
+				<div class="col-md-6 col-sm-12 center">
+					<img class="responsive profile-img" src="images/profile.png" alt="Elizabeth Letourneau">
+				</div>
+			</div>
+		</div>
+
+
+		<!--Footer-->
+		<div class="bgimg-4">
+			<div class="row justify-content-center ml-0 mr-0">
+				<div class="col center">
+					<div class="col-sm footer">
+						<a href="https://www.linkedin.com/in/elizabethletourneau/">
+							<img class="contact-icon" src="images/linkedin.png" />
+						</a>
+						<a href="mailto:elizabeth.letourneau@shopify.com">
+							<img class="contact-icon linkedin" src="images/mail.svg" />
+						</a>
+					</div>
+				</div>	
 			</div>
 		</div>
 
 	</div>
-</div>
-
-	<script src="index-animations.js"></script>
-	<script src="animations.js"></script>
-
-
+		<script src="animations.js"></script>
+		<script src="work-animations.js"></script>
 </body>
 
 </html>
